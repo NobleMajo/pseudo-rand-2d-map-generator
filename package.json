@@ -1,0 +1,25 @@
+{
+    "name": "ababylontest",
+    "module": "src/index.ts",
+    "devDependencies": {
+        "@types/bun": "^1.2.22"
+    },
+    "peerDependencies": {
+        "typescript": "^5.9.2"
+    },
+    "private": true,
+    "scripts": {
+        "dev": "bun src/index.html",
+        "bundle": "bun build src/index.ts --outfile dist/index.js",
+        "demo1": "bun run scripts/demo1-pseudo-random.ts",
+        "demo2": "bun run scripts/demo2-single-simplex-map.ts",
+        "demo3": "bun run scripts/demo3-double-simplex-map.ts",
+        "demo4": "bun run scripts/demo4-multi-simplex-map.ts",
+        "demo5": "bun run scripts/demo5-scolling-simplex-map.ts",
+        "demo6": "bun run scripts/demo6-animated-simplex-map.ts"
+    },
+    "type": "module",
+    "dependencies": {
+        "pixi.js": "^8.13.2"
+    }
+}

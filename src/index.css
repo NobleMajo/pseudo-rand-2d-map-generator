@@ -1,0 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #1a1a1a; /* Dark background to frame the canvas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    display: block;
+    max-width: 100vw;
+    max-height: 100vh;
+    /* Don't force width/height - let JavaScript handle aspect ratio */
+    image-rendering: pixelated; /* Sharp rendering for 2D pixel art */
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
